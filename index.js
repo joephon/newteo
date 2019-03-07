@@ -15,7 +15,7 @@ const app = fs.readFileSync(path.join(__dirname, 'bin/api/app.js'))
 const config = fs.readFileSync(path.join(__dirname, 'bin/api/config.js'))
 const router = fs.readFileSync(path.join(__dirname, 'bin/api/router.js'))
 const babelrc = fs.readFileSync(path.join(__dirname, 'bin/api/.babelrc'))
-const gitignore = fs.readFileSync(path.join(__dirname, 'bin/api/.gitignore'))
+// const gitignore = fs.readFileSync(path.join(__dirname, 'bin/api/.gitignore'))
 const env = fs.readFileSync(path.join(__dirname, 'bin/api/.env'))
 
 cmd
@@ -51,7 +51,7 @@ cmd
     fs.writeFileSync('./src/config.js', config)
     fs.writeFileSync('.babelrc', babelrc)
     fs.writeFileSync('.env', env)
-    fs.writeFileSync('.gitignore', gitignore)
+    // fs.writeFileSync('.gitignore', gitignore)
 
     echo(ls('-A').join(' ').magenta)
     echo(`now installing dependencies...`.green)
