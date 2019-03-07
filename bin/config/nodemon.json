@@ -1,0 +1,15 @@
+{
+    "verbose": true,
+    "ignore": [
+        "*.test.js",
+        "public/*",
+        "docs/*",
+        "log/*",
+        "dist/*",
+        "docs/*",
+        "elasticsearch/*",
+        "tests/*",
+        "*.lock"
+    ],
+    "delay": 2.5
+}
