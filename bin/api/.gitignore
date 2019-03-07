@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # mac os
-,DS_Store
+.DS_Store
 # Runtime data
 pids
 *.pid
